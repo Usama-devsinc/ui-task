@@ -11,6 +11,12 @@ input {
   border: none;
   padding: 5px;
 }
+#socials-section {
+  padding: 20px;
+}
+.logos i {
+  padding-right: 2%;
+}
 .logo-img {
   margin-top: 20px;
   float: left;
@@ -24,7 +30,9 @@ ul {
 li {
   float: left;
 }
-
+#services-section {
+  padding: 35px;
+}
 li a {
   display: block;
   color: rgb(255, 255, 255);
@@ -32,13 +40,13 @@ li a {
   padding: 14px 20px;
   text-decoration: none;
 }
-.second {
+.navigation-block {
   margin-right: 4%;
 }
-.third {
+.services-block {
   margin-right: 4%;
 }
-.right-btn {
+.quote-btn {
   background: none;
   max-height: 40px;
   vertical-align: center;
@@ -48,18 +56,18 @@ li a {
   border-radius: 40px;
 }
 
-#sec-one {
+#header-section {
   background-color: navy;
 }
 
-#sec-two h3 {
+#services-section h3 {
   color: #ff5089;
   text-align: center;
 }
-#sec-three {
+#features-section {
   background-color: aliceblue;
 }
-#sec-three h1 {
+#features-section h1 {
   color: black;
   text-align: left;
   font-weight: bold;
@@ -67,42 +75,42 @@ li a {
   margin-top: 100px;
   margin-left: 5%;
 }
-#sec-four {
+#industries-section {
   background-color: navy;
 }
-#sec-four h3 {
+#industries-section h3 {
   color: #ff5089;
   padding-left: 4%;
   padding-top: 2%;
   margin-top: 0;
 }
-#sec-four h1 a {
+#industries-section h1 a {
   color: white;
 }
-#sec-four h1 {
+#industries-section h1 {
   color: white;
   padding-left: 2%;
   padding-top: 2%;
   text-align: center;
   margin-top: 2%;
 }
-#sec-five h1 {
+#business-section h1 {
   text-align: center;
   margin-top: 5%;
   font-weight: bold;
   font-size: 36px;
 }
-#sec-five h2 {
+#business-section h2 {
   font-weight: bold;
   font-size: 60px;
   text-align: center;
   margin-bottom: 20px;
 }
-#sec-five p {
+#business-section p {
   text-align: center;
 }
 
-#sec-six h1 {
+#achievement-section h1 {
   text-align: center;
   margin-top: 3%;
   margin-bottom: 3%;
@@ -244,14 +252,14 @@ li a {
   font-size: 24px;
   padding-left: 30px;
 }
-.flex-box1 {
+.flex-box-services {
   display: flex;
 
   padding-left: 2%;
   padding-right: 2%;
   justify-content: space-around;
 }
-.flex-box2 {
+.flex-box-features {
   display: flex;
 
   justify-content: space-around;
@@ -261,7 +269,7 @@ li a {
   width: 100%;
   justify-content: stretch;
 }
-.flex-box4 {
+.flex-box-socials {
   display: flex;
 
   padding-left: 2%;
@@ -344,7 +352,7 @@ li a {
 .display-flex {
   display: flex;
 }
-.num-flex {
+.flex-images {
   display: flex;
   justify-content: space-around;
 }
@@ -355,12 +363,12 @@ li a {
   align-self: center;
   background-color: navy;
 }
-.para {
+.paragraph {
   text-align: center;
   margin-left: 22%;
   margin-right: 22%;
 }
-.para2 {
+.paragraph2 {
   text-align: center;
   margin-left: 20%;
   margin-right: 20%;
@@ -371,14 +379,14 @@ li a {
 }
 .img-div {
   width: 59%;
-  min-height: 600px;
+  min-height: 500px;
 }
-.img0 {
+.banner-img {
   width: 95%;
   height: 90%;
   margin-left: -20%;
 }
-.bg-img1 {
+.inspire1 {
   background-image: url("./images/inspire1.png");
   background-repeat: no-repeat;
   text-align: center;
@@ -389,7 +397,7 @@ li a {
   font-size: xx-large;
   box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
 }
-.bg-img2 {
+.inspire2 {
   background-image: url("./images/inspire2.png");
   background-repeat: no-repeat;
   color: white;
@@ -400,7 +408,7 @@ li a {
   font-size: xx-large;
   box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
 }
-.bg-img3 {
+.inspire3 {
   background-image: url("./images/inspire3.png");
   background-repeat: no-repeat;
   color: white;
@@ -411,7 +419,7 @@ li a {
   font-size: xx-large;
   box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
 }
-.bg-img4 {
+.solutions-bg-img {
   background-image: url("./images/third.png");
   background-repeat: no-repeat;
   color: white;
@@ -423,7 +431,7 @@ li a {
   font-size: xx-large;
   box-shadow: inset 0 0 0 2000px rgba(9, 23, 151, 0.3);
 }
-.sec3-img {
+.features-bg-img {
   width: 100%;
   /* height: 50%;*/
 }
@@ -489,17 +497,26 @@ li a {
 
 @media screen and (max-width: 1920px) {
   .width {
-    width: 40%;
+    width: 30%;
+  }
+}
+@media screen and (max-width: 1420px) {
+  .notification {
+    height: 17%;
+    width: 100%;
   }
 }
 @media screen and (max-width: 1320px) {
   .notification {
-    height: 17%;
+    height: 19%;
+  }
+  .features {
+    font-size: 18px;
   }
   .img-div {
     width: 100%;
   }
-  .img0 {
+  .banner-img {
     width: 100%;
   }
   .content {
@@ -531,6 +548,9 @@ li a {
   .notif-msg {
     font-size: 14px;
   }
+  .banner-img {
+    margin-left: -10%;
+  }
 }
 @media screen and (max-width: 1123px) {
   .content {
@@ -545,11 +565,14 @@ li a {
     width: auto;
     font-size: 22px;
   }
-  .flex-box4 {
+  .flex-box-socials {
     flex-direction: column;
   }
+  .flex-box-features {
+    flex-wrap: wrap;
+  }
   .nav-bar ul,
-  .right-btn {
+  .quote-btn {
     display: none;
   }
   .img-div {
@@ -564,9 +587,24 @@ li a {
     display: block;
     float: right;
   }
+  .notification {
+    top: 83%;
+    left: 3%;
+    width: 94%;
+    height: 15%;
+  }
+  .notification img {
+    width: 14%;
+  }
+  .features {
+    font-size: 20px;
+  }
+  #socials-section {
+    padding: 10px;
+  }
 }
 @media screen and (max-width: 980px) {
-  .num-flex {
+  .flex-images {
     flex-wrap: wrap;
     /* flex-direction: column;*/
   }
@@ -576,10 +614,8 @@ li a {
   .blocks {
     flex-wrap: wrap;
   }
-  .flex-box2 {
-    flex-wrap: wrap;
-  }
-  .flex-box1 {
+
+  .flex-box-services {
     flex-wrap: wrap;
   }
   .flexbox {
@@ -598,25 +634,14 @@ li a {
     width: 80%;
     height: 260px;
   }
-  .notification {
-    top: 83%;
-    left: 3%;
-    width: 94%;
-    height: 15%;
-  }
-  .notification img {
-    width: 14%;
-  }
-  .features {
-    font-size: 20px;
-  }
+
   .flexbox {
     margin-left: 0;
   }
   .img-border {
     width: 20%;
   }
-  #sec-three h1 {
+  #features-section h1 {
     margin-left: 0;
   }
   .btn-orng2 {
@@ -649,22 +674,22 @@ li a {
     font-size: 30px;
   }
 
-  #sec-four h1 {
+  #industries-section h1 {
     margin-top: 35px;
   }
-  #sec-six h1 {
+  #achievement-section h1 {
     margin-top: 28px;
   }
-  .para2 {
+  .paragraph2 {
     margin-left: 5%;
     margin-right: 5%;
     font-size: 26px;
   }
-  .para {
+  .paragraph {
     margin-left: 5%;
     margin-right: 5%;
   }
-  #sec-three h1 {
+  #features-section h1 {
     text-align: left;
     font-weight: bold;
     font-size: 32px;
@@ -672,7 +697,7 @@ li a {
     width: 40%;
   }
   .notification {
-    height: 17%;
+    height: 15%;
   }
   .features {
     font-size: 14px;
@@ -695,7 +720,7 @@ li a {
   .width {
     width: 75%;
   }
-  #sec-three h1 {
+  #features-section h1 {
     width: 45%;
   }
 }
@@ -709,7 +734,7 @@ li a {
   .width {
     width: 80%;
   }
-  #sec-three h1 {
+  #features-section h1 {
     width: 70%;
     margin-top: 10%;
   }
@@ -721,7 +746,6 @@ li a {
   .notification {
     width: 98%;
     left: 1%;
-    height: 16%;
   }
   .features {
     font-size: 14px;
@@ -734,25 +758,25 @@ li a {
   .notif-msg {
     font-size: 12px;
   }
-  #sec-three h1 {
+  #features-section h1 {
     width: 80%;
     font-size: 26px;
     margin-top: 50px;
   }
-  .para {
+  .paragraph {
     margin-left: 0;
     margin-right: 0;
   }
-  #sec-five h1 {
+  #business-section h1 {
     font-size: 28px;
   }
   .block {
     font-size: large;
   }
-  #sec-four h3 {
+  #industries-section h3 {
     padding-top: 5%;
   }
-  #sec-six h1 {
+  #achievement-section h1 {
     font-size: 24px;
   }
 }
