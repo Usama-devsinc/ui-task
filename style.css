@@ -53,7 +53,7 @@ li a {
 }
 
 #sec-two h3 {
-  color: lightcoral;
+  color: #ff5089;
   text-align: center;
 }
 #sec-three {
@@ -71,7 +71,7 @@ li a {
   background-color: navy;
 }
 #sec-four h3 {
-  color: #e33642;
+  color: #ff5089;
   padding-left: 4%;
   padding-top: 2%;
   margin-top: 0;
@@ -127,24 +127,28 @@ li a {
   width: 50%;
 }
 
-.fa-database {
-  color: tomato;
+.img-center i {
+  color: #ff5089;
+  border: 10px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  color: rgb(226, 84, 132);
+  box-shadow: 2px 2px 5px 0px rgb(180 180 180);
+  padding: 10px;
 }
-.fa-lock {
-  color: tomato;
-}
+
 .fa-plane {
-  color: tomato;
-}
-.fa-graduation-cap {
-  color: tomato;
-}
-.fa-shopping-cart {
-  color: tomato;
+  color: #ff5089;
 }
 .fa-building {
-  color: tomato;
+  color: #ff5089;
 }
+.fa-graduation-cap {
+  color: #ff5089;
+}
+.fa-shopping-cart {
+  color: #ff5089;
+}
+
 .container {
   display: flex;
   justify-content: space-between;
@@ -169,17 +173,17 @@ li a {
 .btn-orng {
   color: white;
   font-size: 20px;
-  background-color: tomato;
+  background-color: #ff5089;
   padding: 10px;
-  border: 2px solid tomato;
+  border: 2px solid #ff5089;
   border-radius: 25px;
 }
 .btn-orng2 {
   color: white;
   font-size: 22px;
-  background-color: tomato;
+  background-color: #ff5089;
   padding: 10px;
-  border: 2px solid tomato;
+  border: 2px solid #ff5089;
   border-radius: 25px;
   width: 180px;
   margin-left: 5%;
@@ -491,6 +495,15 @@ li a {
 @media screen and (max-width: 1320px) {
   .notification {
     height: 17%;
+  }
+  .img-div {
+    width: 100%;
+  }
+  .img0 {
+    width: 100%;
+  }
+  .content {
+    width: 60%;
   }
 }
 @media screen and (max-width: 1220px) {
